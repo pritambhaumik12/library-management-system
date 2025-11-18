@@ -115,8 +115,10 @@ URL: http://localhost/lms_project/login.php
 
 Note: You must create a member via the Admin Panel first. The default password for new members is set to 'password'.
 
-**_⚠️ Security Note_**
+**_⚠️ Security Note:_**
+
 This project is designed for educational purposes. Passwords are currently stored in plain text to make the code easier to understand for beginners. For a production environment, please update the code to use password_hash() and password_verify().
 
-**_📜 License_**
+**_📜 License:_**
+
 This project is open-source and available only for educational use.
