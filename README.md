@@ -38,39 +38,37 @@ lms_project/
 ├── search.php          # Public catalog search
 └── lms_db_setup.sql    # Database import file
 ```
-**⚙️ Installation & Setup**
+## ⚙️ Installation & Setup
+
 Follow these steps to get the project running on your local machine.
 
-1. Prerequisites
-Install XAMPP (recommended), WAMP, or MAMP.
+### Prerequisites
+* Install **XAMPP** (recommended), **WAMP**, or **MAMP**.
+* Ensure **Apache** and **MySQL** are running.
 
-Ensure Apache and MySQL are running.
+### File Setup
+1.  Download or Clone this repository.
+2.  Copy the `lms_project` folder.
+3.  Paste it into your server's root directory:
+    * **XAMPP:** `C:\xampp\htdocs\`
+    * **WAMP:** `C:\wamp64\www\`
+    * **MAMP:** `/Applications/MAMP/htdocs/`
 
-2. File Setup
-Download or Clone this repository.
+### Database Setup
+1.  Open your browser and go to **phpMyAdmin** (`http://localhost/phpmyadmin`).
+2.  Create a new database named: `lms_db`
+3.  Click on the **Import** tab.
+4.  Choose the file `lms_db_setup.sql` (located in the project root) and click **Import**.
 
-Copy the lms_project folder.
+### Configuration (Optional)
+By default, the project is configured for XAMPP settings (`User: root`, `Password: `). If your database uses a password, edit `includes/db_connect.php`:
 
-Paste it into your server's root directory:
-
-XAMPP: C:\xampp\htdocs\
-
-WAMP: C:\wamp64\www\
-
-MAMP: /Applications/MAMP/htdocs/
-
-3. Database Setup
-Open your browser and go to phpMyAdmin (http://localhost/phpmyadmin).
-
-Create a new database named: lms_db
-
-Click on the Import tab.
-
-Choose the file lms_db_setup.sql (located in the project root) and click Import.
-
-4. Configuration (Optional)
-By default, the project is configured for XAMPP settings (User: root, Password: ). If your database uses a password, edit includes/db_connect.php:
-
+```
+$servername = "localhost";
+$username = "root";      // Change if different
+$password = "";          // Add your MySQL password here
+$dbname = "lms_db";
+```
 **_PHP_**
 ```
 $servername = "localhost";
