@@ -1,46 +1,33 @@
 # Welcome to Library Management System (LMS)
-A comprehensive, web-based Library Management System built using PHP and MySQL. This system allows librarians to manage books, members, and circulation (issues/returns), while allowing members (students/faculty) to browse the catalog and view their borrowing history.
 
-**_🚀 Features_**
+A comprehensive, web-based Library Management System built using **PHP** and **MySQL**. This system allows librarians to manage books, members, and circulation (issues/returns), while allowing members (students/faculty) to browse the catalog and view their borrowing history.
 
-**Admin Panel (Librarian)**
-Dashboard: View real-time statistics (Total books, issued books, overdue, etc.).
+## 🚀 Features
 
-Book Management: Add, edit, and delete books and manage individual book copies.
+### Admin Panel (Librarian)
+* **Dashboard:** View real-time statistics (Total books, issued books, overdue, etc.).
+* **Book Management:** Add, edit, and delete books and manage individual book copies.
+* **Member Management:** Register and manage student/faculty members.
+* **Circulation:** Issue and Return books with automatic fine calculation.
+* **Fines:** Track and collect payments for overdue books.
+* **Reports:** View borrowing history, overdue lists, and financial reports.
+* **Settings:** Configure library rules (fine amount per day, borrowing limits, etc.).
 
-Member Management: Register and manage student/faculty members.
+### Member Panel (User)
+* **Catalog Search:** Search for books by title, author, or category.
+* **My Dashboard:** View current borrowings and outstanding fines.
+* **History:** View complete history of borrowed and returned books.
+* **Profile:** Update personal details and change password.
 
-Circulation: Issue and Return books with automatic fine calculation.
+## 🛠️ Tech Stack
+* **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+* **Backend:** PHP (Native)
+* **Database:** MySQL / MariaDB
+* **Server:** Apache (via XAMPP/WAMP)
 
-Fines: Track and collect payments for overdue books.
+## 📂 Project Structure
 
-Reports: View borrowing history, overdue lists, and financial reports.
-
-Settings: Configure library rules (fine amount per day, borrowing limits, etc.).
-
-**Member Panel (User)**
-
-Catalog Search: Search for books by title, author, or category.
-
-My Dashboard: View current borrowings and outstanding fines.
-
-History: View complete history of borrowed and returned books.
-
-Profile: Update personal details and change password.
-
-**_🛠️ Tech Stack_**
-
-Frontend: HTML5, CSS3, JavaScript (Vanilla)
-
-Backend: PHP (Native)
-
-Database: MySQL / MariaDB
-
-Server: Apache (via XAMPP/WAMP)
-
-**📂 Project Structure**
 ```
-
 lms_project/
 ├── admin/              # Admin panel files (Protected)
 ├── assets/             # CSS and JS files
@@ -50,7 +37,6 @@ lms_project/
 ├── login.php           # User login
 ├── search.php          # Public catalog search
 └── lms_db_setup.sql    # Database import file
-
 ```
 **⚙️ Installation & Setup**
 Follow these steps to get the project running on your local machine.
